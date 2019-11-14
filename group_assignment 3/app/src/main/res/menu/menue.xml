@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/learn"
+        android:layout_width="match_parent"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        />
+
+    <item
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:title="test"
+        android:icon="@drawable/icons8_open_book_128px"/>
+
+    <item
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:title="Profile"
+        android:icon="@drawable/icons8_guest_filled_100px"/>
+
+
+
+
+
+</menu>

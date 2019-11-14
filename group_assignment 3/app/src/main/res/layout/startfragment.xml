@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00830B0B">
+
+    <Button
+        android:id="@+id/sentence"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:background="@drawable/button3"
+
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="12dp"
+        android:text="Sentence (句子）"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characters" />
+
+    <Button
+        android:id="@+id/characters"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="147dp"
+        android:text="Characters (汉字）"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/button3"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/phonetic"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="12dp"
+        android:text="PHONETIC (音标)"
+        android:background="@drawable/button3"
+
+        app:layout_constraintBottom_toTopOf="@+id/word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/characters" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="411dp"
+        android:layout_height="79dp"
+        android:background="#1B303F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="68dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icons8_china_96px_1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="201dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="21dp"
+            android:gravity="center"
+            android:text="Chinese Mandarin"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.619" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/word"
+        android:layout_width="154dp"
+        android:background="@drawable/button3"
+
+        android:layout_height="154dp"
+        android:layout_marginTop="313dp"
+        android:layout_marginEnd="44dp"
+        android:text="IDIOM (成语)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

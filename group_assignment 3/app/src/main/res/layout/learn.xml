@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sound"
+        android:layout_width="131dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginEnd="139dp"
+        android:text="CHARACTER"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="131dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        tools:srcCompat="@drawable/icons8_megaphone_128px" />
+
+    <TextView
+        android:id="@+id/translation"
+        android:layout_width="116dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="147dp"
+        android:text="TRANSLATION"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinyin" />
+
+    <TextView
+        android:id="@+id/pinyin"
+        android:layout_width="236dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="87dp"
+        android:text="pinyin"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play" />
+
+    <TextView
+        android:id="@+id/explain"
+        android:layout_width="282dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="62dp"
+        android:text="explain"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/example" />
+
+    <TextView
+        android:id="@+id/example"
+        android:layout_width="242dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="84dp"
+        android:text="example"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/translation" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="390dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/button"
+        android:text="Ok, got it"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="419dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="1dp"
+        android:background="#1B303F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/delete_sign_60px" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="101dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginBottom="13dp"
+            android:text="Learn"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/characters"
+        android:layout_width="131dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="137dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sound" />
+</androidx.constraintlayout.widget.ConstraintLayout>
